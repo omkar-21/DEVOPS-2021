@@ -1,0 +1,14 @@
+version: '2'
+services:
+   mysql1:
+      build: mysql-1/
+      ports:
+        - "5000:3306"
+   mysql2:
+      build: mysql-2/
+      ports:
+        - "5001:3308"
+   mysql3:
+      build: mysql-3/
+      ports:
+        - "5002:3307"
